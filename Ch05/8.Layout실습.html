@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Layout실습</title>
+    <!--
+        날짜 : 2023/07/07
+        이름 : 신진성
+        내용 : Layout 실습하기
+     -->
+    <style>
+        /* 초기화 */
+        * { margin: 0; padding: 0; }
+        ol, ul { list-style: none; }
+        a { text-decoration: none; color: black; }
+
+        #container {
+            width: 860px;
+            height: auto;
+            background: #aaa;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 100%;
+            height: auto;
+            background: #ccc;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        main > section {
+            float: left;
+            width: 400px;
+            height: 400px;
+            background: #eee;
+            margin: 0 10px;
+        }
+
+        main > aside {
+            float: left;
+            width: 200px;
+            height: 400px;
+            background: #eee;
+        }
+
+        header {
+            width: 100%;
+            height: auto;
+            background: #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        header > nav {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background: #eee;
+            margin: 10px auto;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h3>Header</h3>
+            <nav>
+                <h3>Nav</h3>
+            </nav>
+        </header>
+        <main>
+            <h3>Main</h3>
+            <aside>
+                <h3>Aside #1</h3>
+            </aside>
+            <section>
+                <h3>Section</h3>
+            </section>
+            <aside>
+                <h3>Aside #2</h3>
+            </aside>
+        </main>
+        <footer>
+            <h3>Footer</h3>
+        </footer>
+    </div>
+</body>
+
+</html>
