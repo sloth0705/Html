@@ -81,7 +81,7 @@ main>section {
     height: 620px;
     box-sizing: border-box;
     overflow: hidden;
-    background-image: url("images/main_bg.png");
+    background-image: url("../images/main_bg.png");
 }
 
 main>section>div {
@@ -101,7 +101,7 @@ main div:nth-child(7) {
 }
 
 .box1 {
-    background-image: url("images/main_box1_bg.png");
+    background-image: url("../images/main_box1_bg.png");
     position: relative;
 }
 
@@ -118,14 +118,14 @@ main div:nth-child(7) {
 .box2 {
     padding-top: 30px;
     text-align: center;
-    background-image: url(images/main_box2_bg.png);
+    background-image: url(../images/main_box2_bg.png);
 }
 
 .box3 {
     position: relative;
     padding-top: 30px;
     text-align: center;
-    background-image: url(images/main_box3_bg.png);
+    background-image: url(../images/main_box3_bg.png);
 }
 
 .box3>img:nth-child(1) {
@@ -138,14 +138,14 @@ main div:nth-child(7) {
 .box4 {
     padding-top: 30px;
     text-align: center;
-    background-image: url(images/main_box4_bg.png);
+    background-image: url(../images/main_box4_bg.png);
 }
 
 .box5 {
     position: relative;
     padding-top: 30px;
     text-align: center;
-    background-image: url(images/main_box5_bg.jpg);
+    background-image: url(../images/main_box5_bg.jpg);
 }
 
 .box5>img {
@@ -158,7 +158,7 @@ main div:nth-child(7) {
     position: relative;
     padding-top: 30px;
     text-align: center;
-    background-image: url(images/main_box6_bg.jpg);
+    background-image: url(../images/main_box6_bg.jpg);
 }
 
 .box6>img {
@@ -170,7 +170,7 @@ main div:nth-child(7) {
 .box7 {
     padding-top: 30px;
     text-align: center;
-    background-image: url(images/main_box7_bg.png);
+    background-image: url(../images/main_box7_bg.png);
 }
 
 main>article {
