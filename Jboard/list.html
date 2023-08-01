@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>글목록</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <style>
+            header {
+                width: 100%;
+                height: 36px;
+                padding: 10px;
+                background-color: #f7f7f7;
+                border-bottom: 1px solid #ebebeb;
+            }
+
+            header > h3 {
+                float: left;
+                font-weight: bold;
+                color: #777;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+
+            header > p {
+                float: right;
+            }
+
+            .list {
+                position: relative;
+                width: 720px;
+                margin: 60px auto;
+            }
+
+            .list table th {
+                padding: 12px;
+                border-top: 1px solid #d1dee2;
+                border-bottom: 1px solid #d1dee2;
+                background: #e5ecef;
+                color: #383838;
+            }
+
+            .list > table tr > td:nth-child(1) {
+                width: 50px;
+                text-align: center;
+                background: #fff;
+            }
+
+            .list > table tr > td:nth-child(2) {
+                width: auto;
+                text-align: left;
+            }
+
+            .list > table tr > td:nth-child(3) {
+                width: 100px;
+                text-align: center;
+            }
+
+            .list > table tr > td:nth-child(4) {
+                width: 100px;
+                text-align: center;
+            }
+
+            .list > table tr > td:nth-child(5) {
+                width: 50px;
+                text-align: center;
+            }
+
+            .list > .paging {
+                padding: 20px;
+                text-align: center;
+            }
+
+            .list > .paging > .current {
+                border: 1px solid #6d6d6d;
+                background: #888;
+                color: #fff;
+            }
+
+            .list > .paging > a {
+                padding: 8px;
+                background: #f2f2f2;
+                border: 1px solid #d7d7d7;
+            }
+
+            .list > .btnWrite {
+                position: absolute;
+                bottom: 14px;
+                right: 0;
+                padding: 7px;
+                border: 1px solid #3b3c3f;
+                background: #4b545e;
+                color: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h3>Board System v1.0</h3>
+                <p>
+                    000님 반갑습니다.
+                    <a href="#" class="logout">[로그아웃]</a>
+                </p>
+            </header>
+            <main>
+                <section class="list">
+                    <table>
+                        <caption>글목록</caption>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>글쓴이</th>
+                            <th>날짜</th>
+                            <th>조회</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <a href="./view.html">테스트 제목입니다.</a>&nbsp;[3]
+                            </td>
+                            <td>길동이</td>
+                            <td>20-05-12</td>
+                            <td>12</td>
+                        </tr>
+                    </table>
+                    <div class="paging">
+                        <a href="#" class="prev">이전</a>
+                        <a href="#" class="num current">1</a>                
+                        <a href="#" class="num">2</a>                
+                        <a href="#" class="num">3</a>                
+                        <a href="#" class="next">다음</a>
+                    </div>
+                    <a href="./write.html" class="btnWrite">글쓰기</a>
+                </section>
+            </main>
+            <footer>
+                <p>ⓒcopyright 신진성.com</p>
+            </footer>
+        </div>
+    </body>
+</html>
