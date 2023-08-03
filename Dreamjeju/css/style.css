@@ -180,7 +180,7 @@ main {
     display: none;
 }
 
-#tabMenu>label:nth-child(1) {
+#tabMenu>label.on {
     color: #b00;
 }
 
