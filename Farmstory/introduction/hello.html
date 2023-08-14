@@ -5,46 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>팜스토리::메인</title>
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        /* 서브페이지 공통 */
-        #sub {
-            width: 100%;
-            height: auto;
-        }
-        #sub > .bg {
-            position: relative;
-            width: 100%;
-            height: 184px;
-            background-image: url('../images/sub_top_bg.jpg');
-        }
-        #sub > .bg > img {
-            position: absolute;
-            left: 16px;
-            bottom: 16px;
-        }
-        #sub > section {
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-        }
-        #sub > section > aside {
-            float: left;
-            width: 180px;
-            height: 650px;
-            box-sizing: border-box;
-        }
-        #sub > section > article {
-            float: left;
-            width: 800px;
-            min-height: 650px;
-            box-sizing: border-box;
-        }
-        /* 팜스토리소개 */
-        /* 장보기 */
-        /* 농작물이야기 */
-        /* 이벤트 */
-        /* 커뮤니티 */
-    </style>
 </head>
 <body>
     <div id="container">
@@ -68,9 +28,25 @@
         </header>
         <div id="sub">
             <div class="bg"><img src="../images/sub_top_tit1.png" alt="INTRODUCTION"></div>
-            <section>
-                <aside></aside>
-                <article></article>
+            <section class="introduction">
+                <aside>
+                    <img src="../images/sub_aside_cate1_tit.png" alt="">
+                    <ol class="lnb">
+                        <li class="on"><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ol>
+                </aside>
+                <article class="content">
+                    <nav>
+                        <img src="../images/sub_nav_tit_cate1_tit1.png" alt="">
+                        <p>
+                            HOME > 팜스토리소개 > <strong>인사말</strong>
+                        </p>
+                    </nav>
+                    <p>
+                        인사말 페이지
+                    </p>
+                </article>
             </section>
         </div>
         <footer>
