@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팜스토리::메인</title>
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '돋움';
+        }
+        ul, ol {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        input, textarea {
+            outline: none;
+        }
+        #container {
+            width: 980px;
+            height: auto;
+            margin: 0 auto;
+        }
+        /* 헤더 */
+        header {
+            position: relative;
+            width: 100%;
+            height: 142px;
+            background-image: url('./images/head_top_line.png');
+            background-repeat: no-repeat;
+            box-sizing: border-box;
+        }
+        header > .logo {
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            margin-left: -95px;
+        }
+        header > p {
+            float: right;
+            margin-top: 16px;
+        }
+        header > p > a {
+
+        }
+        header > img {
+            float: right;
+            clear: right;
+            margin-top: 24px;
+        }
+        header > .gnb {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+        }
+        header > .gnb > li {
+            float: left;
+            width: 20%;
+            height: 100%;
+            box-sizing: border-box;
+            background-image: url('./images/head_menu_line.png');
+            background-repeat: no-repeat;
+            background-position: 0 -8px;
+        }
+        header > .gnb > li > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: 0 6px;
+            font-size: 0;
+        }
+        header > .gnb > li:nth-child(1) > a {
+            background-image: url('./images/head_menu1.png');
+        }
+        header > .gnb > li:nth-child(2) > a {
+            background-image: url('./images/head_menu2.png');
+        }
+        header > .gnb > li:nth-child(3) > a {
+            background-image: url('./images/head_menu3.png');
+        }
+        header > .gnb > li:nth-child(4) > a {
+            background-image: url('./images/head_menu4.png');
+        }
+        header > .gnb > li:nth-child(5) > a {
+            background-image: url('./images/head_menu5.png');
+        }
+        header > .gnb > li:nth-child(1) > a:hover {
+            background-image: url('./images/head_menu1_ov.png');
+        }
+        header > .gnb > li:nth-child(2) > a:hover {
+            background-image: url('./images/head_menu2_ov.png');
+        }
+        header > .gnb > li:nth-child(3) > a:hover {
+            background-image: url('./images/head_menu3_ov.png');
+        }
+        header > .gnb > li:nth-child(4) > a:hover {
+            background-image: url('./images/head_menu4_ov.png');
+        }
+        header > .gnb > li:nth-child(5) > a:hover {
+            background-image: url('./images/head_menu5_ov.png');
+        }
+        /* 푸터 */
+        footer {
+            width: 100%;
+            height: 120px;
+            margin-top: 10px;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        /* 메인 */
+        main {
+            width: 100%;
+            height: auto;
+            border: 1px solid blue;
+            box-sizing: border-box;
+        }
+        main > div {
+            width: 100%;
+            margin-top: 10px;
+            border: 1px solid green;
+            box-sizing: border-box;
+        }
+        main > .slider {
+            height: 312px;
+        }
+        main > .quick {
+            height: 74px;
+        }
+        main > .latest {
+            height: 186px;
+        }
+        main > .info {
+            height: 154px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <a href="#" class="logo"><img src="./images/logo.png" alt="로고"></a>
+            <p>
+                <a href="#">HOME</a>|
+                <a href="#">로그인</a>|
+                <a href="#">회원가입</a>|
+                <a href="#">관리자</a>|
+                <a href="#">고객센터</a>
+            </p>
+            <img src="./images/head_txt_img.png" alt="3만원이상 무료배송 ㆍ 팜카드 10% 적립">
+            <ul class="gnb">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="slider"></div>
+            <div class="quick"></div>
+            <div class="latest"></div>
+            <div class="info"></div>
+        </main>
+        <footer></footer>
+    </div>
+</body>
+</html>
